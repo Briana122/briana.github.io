@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;font-family: 'Lora', serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.text-box{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 72px;
+    color: #C8362E;
+    font-weight: lighter;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 24px;
+    color: #DD534B;
+}
+
+nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 75px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 18px;
+    position: relative;
+}
+
+.nav-links ul li:hover .overlay-red{
+    opacity: 1;
+}
+
+.nav-links ul li:hover .overlay-pink{
+    opacity: 1;
+}
+
+.overlay-red{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 95%;
+    opacity: 0;
+    transition: 0.25s ease;
+    background-color: #DD534B;
+}
+
+.overlay-pink{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 95%;
+    opacity: 0;
+    transition: 0.25s ease;
+    background-color: #FFAFAA;
+}
+
+.overlay-red-text{
+    color: #C8362E;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay-pink-text{
+    color: #FFAFAA;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
